@@ -1,0 +1,166 @@
+h1 {
+    font-size: 28px;
+    text-transform: capitalize;
+}
+#job {
+    font-size: 18px;
+    font-weight: bold;
+    color:darkblue
+}
+.summery{
+    font-size: 18px;
+    line-height: 20px;
+}
+h3 {
+    font-size: 20px;
+    color: magenta;
+}
+*{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
+}
+header,footer{
+    text-align: center;
+}
+section,footer{
+    padding: 2px 10px;
+}
+h1,h3{
+    border-bottom: 1px solid black;
+    padding-bottom: 2px;
+}
+header,footer{
+    background-color: black;
+    
+}
+header{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: left;
+    position:fixed;
+    flex-wrap: nowrap;
+    width: 100%; 
+}
+nav{
+    text-align: right;
+}
+header:nth-child(1){
+    color:aquamarine;
+}
+a{
+    text-decoration:green;
+    text-transform: uppercase;
+    border-radius: 7px;
+    background-color: darkturquoise;
+    box-shadow: 0px 0px 10px darkturquoise;
+
+}
+a:hover{
+    background-color: white;
+    border-radius: 7px;
+    text-decoration: underline;
+}
+li{
+    margin-bottom: 5px;
+}
+th{
+    background-color: midnightblue;
+    color: oldlace;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}
+td{
+    background-color: blue;
+    color: oldlace;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}
+footer{
+    color: white;
+}
+.c{
+    margin-top: 50px;
+}
+.d{
+    border: 1px solid black;
+    width: 150px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+textarea{
+    border: 1px solid black;
+    width: 203px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.f{
+    color: black;
+    font-weight: bold;
+}
+.r{
+    color:black;
+    background-color: blue;
+    border:1px solid black;
+    border-radius: 7px;
+    margin-bottom: 7px;
+    box-shadow:0px 0px 10px  blue;
+}
+.r:hover{
+    background-color: lightseagreen;
+    color:blue
+}
+@keyframes arash{
+    from{
+        transform: translate(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+@keyframes aras{
+    from{
+        transform: translate(+100%);
+        opacity: 0;
+    }
+    to{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+@keyframes ara{
+    from{
+        transform: translatey(+100%);
+        opacity: 0;
+    }
+    to{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+header h1{
+    animation-name: arash;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    padding-left: 30px;
+}
+header nav{
+    animation-name: aras;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    padding-right: 30px;
+}
+article{
+    animation-name: ara;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+}
+article footer{
+    padding-left: 30px;
+    padding-right: 30px;
+}
